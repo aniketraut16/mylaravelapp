@@ -1,6 +1,8 @@
 <?php
-for ($i=5; $i > 0; $i--) { 
-    for ($j=0; $j < $i; $j++) { 
+// Printing Inverted star pattern
+for ($row=5; $row > 0; $row--) { 
+    for ($col=0; $col < $row; $col++) { 
+        //Printing star 
         echo "*";
     }
     echo "\n";
