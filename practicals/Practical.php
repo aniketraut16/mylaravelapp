@@ -1,5 +1,7 @@
 <?php
 
+namespace practicals;
+
 class Practical {
     //Prints "Hello, World!" to the standard output.
     public static function printHello() {
@@ -31,14 +33,5 @@ class Practical {
     }
 }
 
-// Example usage:
-Practical::printHello();
-echo "\n";
-
-$sum = Practical::add(5, 7);
-echo "Sum: $sum\n";
-
-$fibonacciSequence = Practical::generateFibonacciSequence(10);
-echo "Fibonacci Sequence: " . implode(", ", $fibonacciSequence);
 
 ?>
