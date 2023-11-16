@@ -8,9 +8,8 @@ use Tests\TestCase;
 
 class BaiganTest extends TestCase
 {
-    /**
-     * A basic feature test baigan.
-     */
+  
+     // A basic feature test baigan.
     public function testBaiganOK(): void
     {
         $response = $this->get('/veggies/baigan');
@@ -18,9 +17,9 @@ class BaiganTest extends TestCase
         $response->assertStatus(200);
     }
 
-    /**
-     * Feature to test all veggies
-     */
+
+     // Feature to test all veggies
+ 
     public function testVeggiesOK(): void
     {
       $response = $this->get('/veggies/bhindi');
@@ -28,9 +27,9 @@ class BaiganTest extends TestCase
       $response->assertStatus(200);
     }
 
-    /**
-     * Feature to test seeing aaloo gobhi
-     */
+
+    // Feature to test seeing aaloo gobhi
+
     public function testVeggiesSeeAalooGobhi(): void
     {
       $response = $this->get('/veggies/aaloo');
@@ -42,10 +41,7 @@ class BaiganTest extends TestCase
       $response->assertSee("gobhi");
     }
 
-    /**
-     * Feature to test seeing baigan, bhindi, aaloo, gobhi but reject
-     * pyaas, adrak, lassan
-     */
+    //Feature to test seeing baigan, bhindi, aaloo, gobhi but reject pyaas, adrak, lassan
     public function testVeggiesAdrakLassan(): void
     {
       $response = $this->get('/veggies/baigan');
@@ -76,9 +72,9 @@ class BaiganTest extends TestCase
     }
 
 
-    /**
-     * Feature to test seeing all veggies
-     */
+
+     // Feature to test seeing all veggies
+
     public function testVeggiesSeeAll(): void
     {
       $response = $this->get('/veggies');
