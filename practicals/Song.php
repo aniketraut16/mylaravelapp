@@ -11,12 +11,12 @@ class Song {
     private $tempo;
 
 // Constructor
-    public function __construct($title, $artist, $genre, $tempo) {
-        $this->title = $title;
-        $this->artist = $artist;
-        $this->genre = $genre;
-        $this->tempo = $tempo;
-    }
+    // public function __construct($title, $artist, $genre, $tempo) {
+    //     $this->title = $title;
+    //     $this->artist = $artist;
+    //     $this->genre = $genre;
+    //     $this->tempo = $tempo;
+    // }
 //Getter and Setter Methods
     public function getTitle() {
         return $this->title;
