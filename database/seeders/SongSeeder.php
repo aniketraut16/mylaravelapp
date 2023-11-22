@@ -27,11 +27,6 @@ class SongSeeder extends Seeder
             ]);
             
             Song::create([
-                'artist' => 'Ariana Grande',
-                'title' => 'Thank U, Next',
-            ]);
-            
-            Song::create([
                 'artist' => 'The Weeknd',
                 'title' => 'Blinding Lights',
             ]);
