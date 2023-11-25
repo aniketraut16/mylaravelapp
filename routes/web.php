@@ -27,7 +27,14 @@ Route::get('/veggies', function () {
     return view('table');
 });
 Route::get('/songs_static', function () {
-    // $song1 = new Song();
+    
+  
+    return view('songs_static'); 
+  });
+
+
+  Route::get('/songs', function () {
+// $song1 = new Song();
     // $song1->setTitle("Stan");
     // $song1->setArtist("Eminem");
   
@@ -38,11 +45,5 @@ Route::get('/songs_static', function () {
     // $song3 = new Song();
     // $song3->setTitle("With You");
     // $song3->setArtist("A P Dhillon");
-  
-    return view('songs_static'); 
-  });
-
-
-  Route::get('/songs', function () {
     return view('songs', [ 'songs' => Song::all() ] );
 });
